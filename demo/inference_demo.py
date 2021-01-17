@@ -13,7 +13,7 @@ checkpoint_file = 'checkpoints/SOLOv2_LIGHT_512_DCN_R50_3x.pth'
 model = init_detector(config_file, checkpoint_file, device='cuda:0')
 
 # test a single image
-img = 'demo/test.jpg'
+img = 'demo/MTC ELITE session OVERHEAD VIEW-videoonly.mp4_20210117_152536276.jpg'
 result = inference_detector(model, img)
 
 show_result_ins(img, result, model.CLASSES, score_thr=0.25, out_file="demo/test-out.jpg")
