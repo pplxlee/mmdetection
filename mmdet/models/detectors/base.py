@@ -24,6 +24,11 @@ class BaseDetector(nn.Module, metaclass=ABCMeta):
         """bool: whether the detector has a neck"""
         return hasattr(self, 'neck') and self.neck is not None
 
+    @property
+    def with_mask_feat_head(self):
+        return hasattr(self, 'mask_feat_head') and \
+            self.mask_feat_head is not None
+
     # TODO: these properties need to be carefully handled
     # for both single stage & two stage detectors
     @property
@@ -304,6 +309,7 @@ class BaseDetector(nn.Module, metaclass=ABCMeta):
         img = mmcv.imread(img)
         img = img.copy()
         if isinstance(result, tuple):
+            print(result)
             bbox_result, segm_result = result
             if isinstance(segm_result, tuple):
                 segm_result = segm_result[0]  # ms rcnn

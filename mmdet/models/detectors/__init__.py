@@ -20,16 +20,20 @@ from .reppoints_detector import RepPointsDetector
 from .retinanet import RetinaNet
 from .rpn import RPN
 from .single_stage import SingleStageDetector
+from .single_stage_ins import SingleStageInsDetector
 from .trident_faster_rcnn import TridentFasterRCNN
 from .two_stage import TwoStageDetector
 from .vfnet import VFNet
 from .yolact import YOLACT
 from .yolo import YOLOV3
+from .solo import SOLO
+from .solov2 import SOLOv2
 
 __all__ = [
     'ATSS', 'BaseDetector', 'SingleStageDetector', 'TwoStageDetector', 'RPN',
     'FastRCNN', 'FasterRCNN', 'MaskRCNN', 'CascadeRCNN', 'HybridTaskCascade',
     'RetinaNet', 'FCOS', 'GridRCNN', 'MaskScoringRCNN', 'RepPointsDetector',
     'FOVEA', 'FSAF', 'NASFCOS', 'PointRend', 'GFL', 'CornerNet', 'PAA',
-    'YOLOV3', 'YOLACT', 'VFNet', 'DETR', 'TridentFasterRCNN'
+    'YOLOV3', 'YOLACT', 'VFNet', 'DETR', 'TridentFasterRCNN',
+    'SingleStageInsDetector', 'SOLO', 'SOLOv2'
 ]

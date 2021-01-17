@@ -26,6 +26,11 @@ from .transformer_head import TransformerHead
 from .vfnet_head import VFNetHead
 from .yolact_head import YOLACTHead, YOLACTProtonet, YOLACTSegmHead
 from .yolo_head import YOLOV3Head
+from .solo_head import SOLOHead
+from .solov2_head import SOLOv2Head
+from .solov2_light_head import SOLOv2LightHead
+from .decoupled_solo_head import DecoupledSOLOHead
+from .decoupled_solo_light_head import DecoupledSOLOLightHead
 
 __all__ = [
     'AnchorFreeHead', 'AnchorHead', 'GuidedAnchorHead', 'FeatureAdaption',
@@ -35,5 +40,6 @@ __all__ = [
     'PISARetinaHead', 'PISASSDHead', 'GFLHead', 'CornerHead', 'YOLACTHead',
     'YOLACTSegmHead', 'YOLACTProtonet', 'YOLOV3Head', 'PAAHead',
     'SABLRetinaHead', 'CentripetalHead', 'VFNetHead', 'TransformerHead',
-    'StageCascadeRPNHead', 'CascadeRPNHead'
+    'StageCascadeRPNHead', 'CascadeRPNHead',
+    'SOLOHead', 'SOLOv2Head', 'SOLOv2LightHead', 'DecoupledSOLOHead', 'DecoupledSOLOLightHead'
 ]
